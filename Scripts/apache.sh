@@ -3,6 +3,10 @@
 
 sudo apt-get update
 
+header()
+install_apache2()
+
+
 function header
 {
   echo ""
