@@ -21,8 +21,8 @@ function install_apache2
     sudo apt-get install apache2
   fi
 
-  echo "Apache version"
-  apache -v
+  echo "Apache2 version"
+  apache2 -v
   echo "###################"
   echo ""
 }
