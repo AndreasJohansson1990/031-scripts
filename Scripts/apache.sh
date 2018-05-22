@@ -34,11 +34,6 @@ function install_curl
   else
     sudo apt-get install -y curl
   fi
-
-  echo "Curl version"
-  curl -v
-  echo "###################"
-  echo ""
 }
 
 header "Installing apache2"
