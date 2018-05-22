@@ -27,5 +27,5 @@ function install_apache2
   echo ""
 }
 
-header()
-install_apache2()
+header "Installing apache2"
+install_apache2
