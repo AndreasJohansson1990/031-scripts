@@ -9,7 +9,7 @@ function header
 {
   echo ""
   echo ""
-  echo "########## $1 ##########"
+  echo "########## Setup ##########"
   echo ""
 }
 
@@ -36,6 +36,13 @@ function install_curl
   fi
 }
 
+function addServerName {
+  echo "What IP do you want to use?"
+  read IP
+  echo "ServerName $IP" >> /etc/apache2/apache2.conf
+}
+
 header "Installing apache2"
 install_apache2
 install_curl
+addServerName
