@@ -18,7 +18,7 @@ function install_apache2
   if which apache2 > /dev/null; then
     echo "Apache is already installed...skipping"
   else
-    sudo apt-get install apache2
+    sudo apt-get install -y apache2
   fi
 
   echo "Apache2 version"

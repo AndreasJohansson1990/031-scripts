@@ -1,5 +1,5 @@
 #!/bin/bash
 
 
-sudo apt-get autoremove apache2
+sudo apt-get autoremove -y apache2
 
