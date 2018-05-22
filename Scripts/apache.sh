@@ -27,5 +27,20 @@ function install_apache2
   echo ""
 }
 
+function install_curl
+{
+  if which curl > /dev/null; then
+    echo "Curl is already installed...skipping"
+  else
+    sudo apt-get install -y curl
+  fi
+
+  echo "Curl version"
+  curl -v
+  echo "###################"
+  echo ""
+}
+
 header "Installing apache2"
 install_apache2
+install_curl
