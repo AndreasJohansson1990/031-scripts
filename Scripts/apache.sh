@@ -41,7 +41,13 @@ function firewallSetup {
   sudo ufw allow in "OpenSSH"
 }
 
+function install_mySQL {
+  sudo apt-get install -y mysql-server
+  mysql_secure_installation
+}
+
 header "Installing apache2"
 install_apache2
 install_curl
 firewallSetup
+install_mySQL
